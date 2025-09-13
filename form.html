@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <H1 style="text-align: center;" >Application Form</H1>
+    <form action="">
+
+     <label for="first">Name</label>
+     <BR>
+     <input id="first" name="ftname" value="First" type="text">
+     <input id="first" name="lname" value="Last" type="text">
+     <br><br>
+    <!-- <label for="email">Email</label>
+    <br>
+    <input id="email" name="email" type="email">
+    <br>
+    <label for="no">Phone Number</label>
+    <br>
+    <input type="number" name="phonenumber" id="no"> -->
+     <table>
+         <tr>
+             <td><label for="email">Email</label></td>
+             <td><label for="no">Phone Number</label></td>
+         </tr>
+         <tr>
+             <td><input id="email" name="email" type="email"></td>
+             <td><input type="number" name="phonenumber" id="no"></td>
+         </tr>
+     </table>
+     <br>
+
+     <table>
+         <tr>
+             <th><label for="work">what type of services</label></th>
+             <th><label for="date">Available Date</label></th>
+         </tr>
+         <tr>
+             <td>
+                <select name="services" id="work">
+                <option value="web">Web development</option>
+                <option value="app">App development</option>
+                <option value="ai">AI</option>
+                <option value="graphicdesigning">Graphic Designing</option>
+     </select>
+             </td>
+             <td><input type="date" name="date" id="date"></td>
+         </tr>
+     </table>
+     <br>
+     <p><strong>What is your current status</strong></p>
+
+     <table>
+         <tr>
+             <td>
+                 <input type="radio" name="currentstatus" id="empoly">
+                 <label for="empoly">Employed</label>
+             </td>
+             <td>
+                 <input type="radio" name="currentstatus" id="unempoly">
+                 <label for="unempoly">Un-employed</label>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <input type="radio" name="currentstatus" id="student">
+                 <label for="student">Student</label>
+             </td>
+             <td>
+                 <input type="radio" name="currentstatus" id="self">
+                 <label for="self">self-employed</label>
+             </td>
+         </tr>
+     </table>
+     <br>
+     <p><strong>Upload your resume</strong></p>
+     <input type="file">
+     <br><br>
+     <input type="submit">
+
+ </form>
+</body>
+</html>
